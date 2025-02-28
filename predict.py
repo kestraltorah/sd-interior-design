@@ -59,7 +59,7 @@ class Predictor(BasePredictor):
         ]
 
         self.pipe = StableDiffusionControlNetInpaintPipeline.from_pretrained(
-            "SG161222/Realistic_Vision_V3.0_VAE",
+            "stabilityai/stable-diffusion-2-1",
             controlnet=controlnet,
             safety_checker=None,
             torch_dtype=torch.float16,
